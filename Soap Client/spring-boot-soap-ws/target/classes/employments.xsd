@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.baeldung.com/springsoap/gen"
+            targetNamespace="http://www.baeldung.com/springsoap/gen" elementFormDefault="qualified">
+
+    <xsd:element name="GetEmploymentRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="names" type="xsd:string"/>
+                <xsd:element name="lastnames" type="xsd:string"/>
+                <xsd:element name="docType" type="xsd:string"/>
+                <xsd:element name="doc_number" type="xsd:string"/>
+                <xsd:element name="birth_date" type="xsd:date"/>
+                <xsd:element name="enjoying_date" type="xsd:date"/>
+                <xsd:element name="job" type="xsd:string"/>
+                <xsd:element name="salary" type="xsd:double"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="GetEmploymentResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="saved" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!--    <xsd:complexType name="employment">-->
+    <!--        <xsd:sequence>-->
+    <!--            <xsd:element name="names" type="xsd:string"/>-->
+    <!--            <xsd:element name="lastnames" type="xsd:string"/>-->
+    <!--            <xsd:element name="docType" type="xsd:string"/>-->
+    <!--            <xsd:element name="doc_number" type="xsd:string"/>-->
+    <!--            <xsd:element name="birth_date" type="xsd:date"/>-->
+    <!--            <xsd:element name="enjoying_date" type="xsd:date"/>-->
+    <!--            <xsd:element name="job" type="xsd:string"/>-->
+    <!--            <xsd:element name="salary" type="xsd:double"/>-->
+    <!--        </xsd:sequence>-->
+    <!--    </xsd:complexType>-->
+    <!--    -->
+</xsd:schema>
