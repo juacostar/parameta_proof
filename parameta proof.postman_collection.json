@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "a416b563-c7f0-4497-8238-bb5519229317",
+		"name": "parameta proof",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12744405",
+		"_collection_link": "https://lunar-shuttle-364533.postman.co/workspace/fizzbuzz~d047c12e-e3d8-4697-863f-2065da33447a/collection/12744405-a416b563-c7f0-4497-8238-bb5519229317?action=share&source=collection_link&creator=12744405"
+	},
+	"item": [
+		{
+			"name": "saveEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"names\":\"Juan Camilo\",\r\n    \"lastnames\":\"Acosta\",\r\n    \"docType\":\"CC\",\r\n    \"docNumber\":\"1122334455\",\r\n    \"birthDate\":\"09/05/2002\",\r\n    \"enjoyingDate\":\"02/12/2013\",\r\n    \"job\":\"developer\",\r\n    \"salary\":1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/employments/employee/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"employments",
+						"employee",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
