@@ -3,6 +3,7 @@ package com.web_client.spring.soap.api.service.impl;
 import com.baeldung.springsoap.gen.GetEmploymentRequest;
 import com.baeldung.springsoap.gen.GetEmploymentResponse;
 
+
 import com.web_client.spring.soap.api.entity.Employment;
 import com.web_client.spring.soap.api.repository.EmploymentsRepository;
 import com.web_client.spring.soap.api.service.EmploymentService;
@@ -27,9 +28,8 @@ public class EmploymentServiceImpl implements EmploymentService {
     public GetEmploymentResponse saveEmployment(GetEmploymentRequest request) {
         GetEmploymentResponse response = new GetEmploymentResponse();
 
-        Employment employment = mapper.requestToEntity(request);
-
         try{
+            Employment employment = mapper.requestToEntity(request);
             repository.save(employment);
             response.setSaved(true);
             return  response;

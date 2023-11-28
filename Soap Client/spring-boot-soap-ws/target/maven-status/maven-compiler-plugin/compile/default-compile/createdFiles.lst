@@ -1,4 +1,16 @@
+com\web_client\spring\soap\api\config\SoapWSConfig.class
+com\web_client\spring\soap\api\service\impl\EmploymentServiceImpl.class
+com\javatechie\spring\soap\api\loaneligibility\package-info.class
+com\web_client\spring\soap\api\util\EmploymentMapper.class
+com\web_client\spring\soap\api\entity\Employment.class
 com\baeldung\springsoap\gen\ObjectFactory.class
 com\baeldung\springsoap\gen\GetEmploymentRequest.class
+com\javatechie\spring\soap\api\loaneligibility\Acknowledgement.class
 com\baeldung\springsoap\gen\GetEmploymentResponse.class
+com\javatechie\spring\soap\api\loaneligibility\CustomerRequest.class
+com\web_client\spring\soap\api\rest\SoapClientResource.class
+com\web_client\spring\soap\api\service\EmploymentService.class
+com\web_client\spring\soap\api\SpringBootSopaWsApplication.class
+com\web_client\spring\soap\api\repository\EmploymentsRepository.class
 com\baeldung\springsoap\gen\package-info.class
+com\javatechie\spring\soap\api\loaneligibility\ObjectFactory.class

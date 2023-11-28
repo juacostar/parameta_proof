@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2023.11.26 a las 03:10:50 PM COT 
+// Generado el: 2023.11.27 a las 06:24:03 PM COT 
 //
 
 
@@ -12,10 +12,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-import java.util.Date;
-import java.util.Date;
 
 
 /**
@@ -32,8 +29,8 @@ import java.util.Date;
  *         &lt;element name="lastnames" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="docType" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="doc_number" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="birth_date" type="{http://www.w3.org/2001/XMLSchema}date"/>
- *         &lt;element name="enjoying_date" type="{http://www.w3.org/2001/XMLSchema}date"/>
+ *         &lt;element name="birth_date" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="enjoying_date" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="job" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="salary" type="{http://www.w3.org/2001/XMLSchema}double"/>
  *       &lt;/sequence>
@@ -67,11 +64,9 @@ public class GetEmploymentRequest {
     @XmlElement(name = "doc_number", required = true)
     protected String docNumber;
     @XmlElement(name = "birth_date", required = true)
-    @XmlSchemaType(name = "date")
-    protected Date birthDate;
+    protected String birthDate;
     @XmlElement(name = "enjoying_date", required = true)
-    @XmlSchemaType(name = "date")
-    protected Date enjoyingDate;
+    protected String enjoyingDate;
     @XmlElement(required = true)
     protected String job;
     protected double salary;
@@ -177,10 +172,10 @@ public class GetEmploymentRequest {
      * 
      * @return
      *     possible object is
-     *     {@link Date }
+     *     {@link String }
      *     
      */
-    public Date getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
@@ -189,10 +184,10 @@ public class GetEmploymentRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link Date }
+     *     {@link String }
      *     
      */
-    public void setBirthDate(Date value) {
+    public void setBirthDate(String value) {
         this.birthDate = value;
     }
 
@@ -201,10 +196,10 @@ public class GetEmploymentRequest {
      * 
      * @return
      *     possible object is
-     *     {@link Date }
+     *     {@link String }
      *     
      */
-    public Date getEnjoyingDate() {
+    public String getEnjoyingDate() {
         return enjoyingDate;
     }
 
@@ -213,10 +208,10 @@ public class GetEmploymentRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link Date }
+     *     {@link String }
      *     
      */
-    public void setEnjoyingDate(Date value) {
+    public void setEnjoyingDate(String value) {
         this.enjoyingDate = value;
     }
 

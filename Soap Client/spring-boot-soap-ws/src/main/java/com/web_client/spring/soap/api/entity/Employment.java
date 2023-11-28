@@ -1,6 +1,7 @@
 package com.web_client.spring.soap.api.entity;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -26,10 +27,10 @@ public class Employment {
 
 
     @Column(name = "birth_date")
-    private Date birthDate;
+    private LocalDate birthDate;
 
     @Column(name = "enjoying_date")
-    private Date enjoyingDate;
+    private LocalDate enjoyingDate;
 
     @Column(name = "job")
     private String job;
@@ -78,19 +79,19 @@ public class Employment {
         this.numIdentification = numIdentification;
     }
 
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 
-    public Date getEnjoyingDate() {
+    public LocalDate getEnjoyingDate() {
         return enjoyingDate;
     }
 
-    public void setEnjoyingDate(Date enjoyingDate) {
+    public void setEnjoyingDate(LocalDate enjoyingDate) {
         this.enjoyingDate = enjoyingDate;
     }
 
