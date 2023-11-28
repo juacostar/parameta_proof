@@ -16,23 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 
 public class ApiRestApplication {
-
-//	@Autowired()
-//	private EmploymentService service;
-//
-//	@PostMapping(value = "/employments/employee/add")
-//	public @ResponseBody ResponseEntity<Object> saveEmployee(@RequestBody GetEmploymentRequest request){
-//
-//		try{
-//			return ResponseEntity.ok().body(service.saveEmployment(request));
-//		}catch (Exception e){
-//			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
-//		}
-//
-//	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(ApiRestApplication.class, args);
 	}
-
 }
